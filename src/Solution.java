@@ -17,4 +17,10 @@ public class Solution {
         double steps = (double)absDistance / (double)D;
         return (int)ceil(steps);
     }
+
+    public int solution2(int X, int Y, int D) {
+        if (X == Y)
+            return 0;
+        return (int)ceil((Y - X) / (double)D);
+    }
 }
